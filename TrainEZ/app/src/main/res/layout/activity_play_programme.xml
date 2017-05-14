@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/motherFrame"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="dk.aau.gr6406.trainez.PlayProgrammeActivity">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="264dp"
+        android:layout_height="167dp"
+        android:layout_gravity="bottom|center_horizontal" />
+
+<FrameLayout
+    android:id="@+id/camera_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</FrameLayout>
+
+    <ImageButton
+        android:id="@+id/imgClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:background="@android:drawable/ic_menu_myplaces"
+        android:nestedScrollingEnabled="false"
+        android:onClick="backToMainMenu"
+        android:padding="20dp" />
+
+    <ImageButton
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:background="@android:drawable/ic_media_play"
+        android:onClick="nextButtonClicked" />
+
+    <ImageButton
+        android:id="@+id/changeSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:background="@android:drawable/ic_menu_view"
+        android:onClick="videoFrameClicked" />
+
+</FrameLayout>

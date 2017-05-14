@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="dk.aau.gr6406.trainez.ExerciseStatFragment"
+android:weightSum="1">
+
+<dk.aau.gr6406.trainez.MultiSelectionSpinner
+    android:id="@+id/input1"
+
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:spinnerMode="dialog" />
+
+<ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="251dp"
+    android:layout_weight="0.98"></ListView>
+
+
+
+</LinearLayout>

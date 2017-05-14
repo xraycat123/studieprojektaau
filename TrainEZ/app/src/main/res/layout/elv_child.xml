@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/video_thumb_compose"
+        android:layout_width="152dp"
+        android:layout_height="89dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="10dp"
+
+        android:minWidth="10dp"
+        android:onClick="thumbClicked"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp"
+        app:layout_constraintTop_toBottomOf="@+id/excName"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/excName"
+        android:layout_width="144dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.12"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <ImageButton
+        android:id="@+id/plus_button_compose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:background="#FFFFFF"
+        android:onClick="plusClicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plus_button" />
+
+    <ImageButton
+        android:id="@+id/minus_button_compose"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-1dp"
+        android:background="#FFFFFF"
+        android:onClick="minusClicked"
+        android:scaleType="fitCenter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plus_button_compose"
+        app:srcCompat="@drawable/minus_button" />
+
+    <TextView
+        android:id="@+id/repetition_text_compose"
+        android:layout_width="68dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="66dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintLeft_toRightOf="@+id/video_thumb_compose"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="84dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/video_thumb_compose" />
+
+
+</android.support.constraint.ConstraintLayout>
